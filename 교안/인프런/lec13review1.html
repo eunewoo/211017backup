@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>template</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+
+      div {
+        background-color: lightblue;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <span>span이 차지하는 크기(인라인요소)</span>
+    <div>div이 차지하는 크기(블록요소)</div>
+
+    <span class="glyphicon glyphicon-search glyphicon-ice-lolly-tasted" aria-hidden="true"></span>
+
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-ice-lolly" aria-hidden="true"></span> icecream
+    </button>
+
+    <h2>Use dropdown</h2>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        취사사이트
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">발주사이트</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://mall.ourhome.co.kr/mall/main.do?NaPm=ct%3Dksv0mnr4%7Cci%3D0yG0000mt2zvjbMyNvof%7Ctr%3Dbrnd%7Chk%3D8b2a8c8e7559f9e649aadf5a27ac567b275c70a9" target="_blank">아워홈</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ourhometfs.co.kr/main.our" target="_blank">TFS</a></li>
+        <li role="presentation" class="dropdown-header">요리유튜브</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.youtube.com/channel/UCyn-K7rZLXjGl7VXGweIlcA" target="_blank">백종원유튜브</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.youtube.com/channel/UCy2WX3w5UyYFHBDHyWFKNUQ" target="_blank">이남자의cook유튜브</a></li>
+      </ul>
+    </div>
+
+
+    <h2>Table style of navigation bar</h2>
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">아이폰13</a></li>
+      <li role="presentation"><a href="#">아이폰XS</a></li>
+      <li role="presentation"><a href="#">갤럭시노트10+</a></li>
+    </ul>
+
+    <h2>navigation bar that has pill style</h2>
+    <ul class="nav nav-pills nav-justified">
+      <li role="presentation" class="active"><a href="#">Iphone</a></li>
+      <li role="presentation"><a href="#">Mac</a></li>
+      <li role="presentation"><a href="#">Ipad</a></li>
+    </ul>
+
+    <h2>navigation bar that has vertical order</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation" class="active"><a href="#">Iphone</a></li>
+      <li role="presentation"><a href="#">Mac</a></li>
+      <li role="presentation"><a href="#">Ipad</a></li>
+    </ul>
+
+    <h2>Dynamic Tab</h2>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#Iphone">Iphone</a></li>
+      <li><a data-toggle="tab" href="#Mac">Mac</a></li>
+      <li><a data-toggle="tab" href="#Ipad">Ipad</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="Iphone" class="tab-pane fade in active">
+        <h3>Iphone</h3>
+        <p>Portable device that has both both phone and internet function.</p>
+      </div>
+      <div id="Mac" class="tab-pane fade">
+        <h3>Mac</h3>
+        <p>laptop computer that uses OS made by Apple.</p>
+      </div>
+      <div id="Ipad" class="tab-pane fade">
+        <h3>Ipad</h3>
+        <p>Portable device that has a function to memo by Apple pan.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

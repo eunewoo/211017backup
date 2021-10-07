@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>bootstrap template</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      div {
+        border: 1px solid red;
+      }
+
+      .w30 {
+        width: 30%;
+      }
+
+      .w40 {
+        width: 40%;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h3>모달이나 경고같은 창을 닫기 위해서 close라는 클래스를 활용할 수 있다.</h3>
+    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3>caret이라는 클래스를 통해 드랍다운을 구현할 수 있다.</h3>
+    <span class="caret"></span>
+
+    <h3>data dismiss="alert"를 이용하여 실제로 동작하는 x버튼을 만들 수 있다.</h3>
+    <div class="alert btn btn-info">
+      불규칙적인 소리에 영향받지 않습니다
+      <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <h3>caret을 드랍다운 아이콘 안에 넣을 수 있다.</h3>
+    <button class="btn btn-danger">
+      블랙리스트목록
+      <span class="caret"></span>
+    </button>
+
+    <h3>요소들을 pull-left, pull-right를 이용해서 왼쪽, 오른쪽으로 이동 시킬 수 있다.</h3>
+    <div class="bg-danger col-xs-3 pull-right">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam hic unde ducimus molestiae voluptates ipsam nihil totam delectus cum.
+    </div>
+    <div class="w30 bg-danger pull-left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam hic unde ducimus molestiae voluptates ipsam nihil totam delectus cum.
+    </div>
+    <div class="clearfix"></div>
+    <div class="bg-warning col-xs-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, magni accusantium quis ipsam, in ullam, sapiente earum non optio eius nesciunt labore quo doloremque, obcaecati reiciendis nam nobis tenetur minus.
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="bg-warning w30 pull-left img-rounded">
+      <h3>왼쪽으로 이동</h3>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quam aspernatur, quod voluptates at! Ab commodi similique voluptatum, aut dignissimos quos tenetur possimus quia voluptate vitae, quae ad non odio?
+    </div>
+    <div class="col-xs-4">
+      clear both 스타일을 주고 싶다면 div요소를 만들고 clearfix클래스명을 부여한 빈 박스를 그 사이에 넣어준다.
+    </div>
+    <div class="bg-info w30 pull-left img-rounded">
+      <h3>오른쪽으로 이동</h3>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quam aspernatur, quod voluptates at! Ab commodi similique voluptatum, aut dignissimos quos tenetur possimus quia voluptate vitae, quae ad non odio?
+    </div>
+    <div class="clearfix"></div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, magni accusantium quis ipsam, in ullam, sapiente earum non optio eius nesciunt labore quo doloremque, obcaecati reiciendis nam nobis tenetur minus.
+    </div>
+
+    
+
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

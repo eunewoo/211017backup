@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>17강_예시들</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+    
+  </head>
+  <body>
+
+    <h2>클래스 thumbnail을 활용해서 이미지 크기를 반응형으로 만들어보자</h2>
+    <h3>클래스 thumbnail 안에 img 태그는 max-width: 100%가 적용되어 화면의 크기에 따라 이미지의 크기가 맞춰진다.</h3>
+    <a href="img/game.png" target="_blank" class="thumbnail">
+      <img src="img/game.png" alt="">
+    </a>
+
+    <h3>그리드 시스템 속에서 thumbnail 클래스를 적용해보자</h3>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <a href="img/instagram.jpg" target="_blank" class="thumbnail">
+          <img src="img/instagram.jpg" alt="">
+
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/logo.jpg" alt="">
+           <div class="caption">
+            <h3>9PIXELSTUDIO</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro neque molestiae sed, repellendus adipisci incidunt ipsum eaque amet nostrum unde!</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>   
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="img/naver.png" target="_blank" class="thumbnail">
+          <img src="img/naver.png" alt=""></a>
+      </div>
+    </div>
+
+    <h2>progress-bar 클래스를 활용하여 진행사항 바를 만들어 보자</h2>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+        <span class="sr-only">70% Complete</span>
+      </div>
+    </div>
+
+    <h2>더 나아가, 진행사항 바에다 퍼센트 표시를 해보자</h2>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+      </div>
+    </div>
+
+    <h2>추가로, 바의 최소 게이지를 설정해보자</h2>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 1em;">
+        0%
+      </div>
+    </div>
+
+    <h2>추가로, 바를 줄무늬 색을 입히고 움직이는 것처럼 설정해보자</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+        <span class="sr-only">70%</span>
+      </div>
+    </div>
+    <br>
+    
+    <h2>미디어 이미지와 텍스트를 media 클래스들을 이용하여 정렬해보자.</h2>
+    <h3>이미지를 왼쪽으로 정렬하려면 media-left를 쓰고 media-body 이전에 배치하고, 오른쪽으로 정렬하려면 media-right를 쓰고 media-body 이후에 배치하자.</h3>
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" src="img/puppy.jpg" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">내사랑은새빨간로즈</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">향기롭겠지만</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+      </div>
+      <div class="media-right">
+        <a href="#">
+          <img class="media-object" src="img/rose.jpg" alt="...">
+        </a>
+      </div>
+    </div>
+
+    <h2>미디어 안에 미디어 덩어리를 넣어보자.</h2>
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">향기롭겠지만</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+        <div class="media">
+          <div class="media-body">
+            <h4 class="media-heading">향기롭겠지만</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+          </div>
+          <div class="media-right">
+            <a href="#">
+              <img class="media-object" src="img/rose.jpg" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="media-right">
+        <a href="#">
+          <img class="media-object" src="img/rose.jpg" alt="...">
+        </a>
+      </div>
+    </div>
+
+    <h2>media-middle, media-bottom 을 이용하여 media에서 이미지를 세로로 가운데정렬, 아래로정렬 시켜보자</h2>
+    <div class="media">
+      <div class="media-left media-middle">
+        <a href="#" id="rose_image1">
+          <img class="media-object" src="img/puppy.jpg" alt="..." >
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">내사랑은새빨간로즈</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla in sint ratione ducimus tempora, doloribus suscipit quo atque odio nobis voluptatem id delectus ipsam corporis molestiae. Enim, facere expedita qui asperiores culpa voluptatum sunt! Perspiciatis vitae, architecto tenetur necessitatibus in, dolore iste totam quo quisquam harum unde ipsam suscipit consequatur provident, natus? Perspiciatis fugiat totam, molestias neque enim eveniet possimus deserunt reprehenderit laudantium unde quasi cum ipsum recusandae doloremque tenetur soluta rerum! Velit, esse! Cumque laborum tempore quisquam voluptate quae ea facilis odio autem dolorem quidem, et beatae repudiandae expedita nostrum laboriosam vitae. Nam vitae provident omnis saepe obcaecati minima dicta beatae. Earum totam error beatae quas dignissimos, aperiam tenetur ad. Inventore aut sed dignissimos illo est beatae labore deserunt corrupti, sequi minus consectetur itaque dolor ducimus accusantium dolorum accusamus! Quia obcaecati accusantium dolores amet labore porro laborum, dolore cumque consequuntur ea tenetur sit repudiandae accusamus eum, voluptatum? Quia hic, consectetur, in natus dolores qui totam omnis pariatur nisi modi quas odio veritatis excepturi impedit perferendis aspernatur eveniet consequatur atque optio enim nobis ipsam ea sequi asperiores error! Eius quia quasi ab pariatur, explicabo iste soluta labore asperiores aut nulla blanditiis in ad laudantium vitae impedit porro alias quis dicta.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatibus soluta exercitationem vero quasi quia ullam obcaecati. Debitis enim ea earum corrupti, sequi, neque veritatis ducimus mollitia vel? Eveniet molestiae est a placeat facilis eaque omnis, ea distinctio libero inventore ipsam nisi, odit asperiores aut blanditiis ex non. In, laborum dolor, repellat modi repellendus maiores. Quasi at, beatae placeat quibusdam amet possimus ullam ut consequuntur quia perferendis repellat doloremque saepe architecto nulla soluta nobis sit rerum voluptate consectetur dolorem eos vel aliquid iste iusto! Doloremque maxime tempore quibusdam nihil blanditiis consequuntur commodi quae nobis repudiandae ullam consequatur veniam iure nesciunt illum placeat sit cum, minus nulla labore? Fuga, fugit? Veniam deleniti nesciunt sapiente esse exercitationem doloribus mollitia aliquid non aperiam illum a reprehenderit pariatur alias, facilis, delectus, voluptate quos distinctio dolore eum est saepe obcaecati! Architecto, inventore ea, aut rem, quam accusantium sed tenetur praesentium et quod itaque amet atque harum, excepturi facere dicta nam. Debitis exercitationem cupiditate sed. Maxime libero nobis dolores eaque dignissimos? Impedit nam similique quia rem eaque magnam accusantium corrupti deserunt velit iure, ipsam, voluptatem, tenetur eum nesciunt porro placeat. Eius expedita id dolor ab eum at deleniti maxime obcaecati ullam excepturi aut tempora odio consectetur vel accusamus ratione laborum ut corrupti numquam atque, ipsa enim! Ut rem quae, delectus, suscipit dicta necessitatibus facere, rerum animi in officia architecto. Ad dolorum nisi sapiente tempora cupiditate debitis officiis asperiores, voluptatibus vero, pariatur. Consequatur aut labore eaque aspernatur optio, accusamus quasi, eveniet aliquam minima vero earum quos omnis. Rem, fugiat quis dignissimos sed eligendi optio saepe minima totam, similique delectus autem minus illum explicabo assumenda repellendus expedita hic in ipsa, mollitia facilis iure! Quos est, eaque itaque veritatis nostrum, ab non fugit illo ad, recusandae odit excepturi expedita repellat delectus enim. Quidem minus saepe autem ex, libero doloribus.
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left media-bottom">
+        <a href="#" id="rose_image2">
+          <img class="media-object" src="img/puppy.jpg" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">내사랑은새빨간로즈</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis numquam perspiciatis qui reiciendis, minima, cum. Molestias ex doloribus provident amet explicabo ipsam quae similique illum aspernatur sequi. Iste, accusamus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam vero debitis accusamus, atque! Quo placeat vitae aliquid voluptas nisi, sequi iste eaque recusandae fugiat asperiores unde voluptatibus culpa numquam ipsa, deleniti doloribus. Doloribus quia sapiente nostrum quibusdam, eius ea nulla nesciunt dicta dolorem, veritatis sequi dolores repellendus, incidunt! Iure minus eaque, delectus ullam. Odit nemo, optio nihil modi dolorum nesciunt, autem iusto necessitatibus illum repellendus! At eius culpa ipsam quisquam, soluta porro ipsum consequuntur? Totam, esse debitis? Suscipit cumque obcaecati omnis facilis natus dolores et quos quasi impedit fugiat. Repellendus nostrum dolores temporibus minima, corrupti? Doloremque at minus placeat dolorum veniam iste, sequi odio magnam fugiat, deserunt eligendi voluptas quisquam impedit tenetur inventore repellat saepe ex possimus veritatis atque. Doloremque ut consectetur sint officiis alias recusandae aspernatur a. Harum odit nemo fuga quo sapiente fugit necessitatibus animi accusamus, numquam voluptatem, labore qui distinctio dolorum voluptates officia eum ea quis iste consectetur architecto quibusdam. Numquam, magni? Tempore, fuga. Accusamus eaque quam ad temporibus hic cumque error aperiam. Tempore magnam neque odio illo deleniti, porro natus nihil, dolorem? Autem mollitia facere rem, animi culpa sequi dicta totam. Eveniet, aut, impedit. Debitis cum explicabo culpa voluptatibus at excepturi ipsum corrupti officia soluta!
+        Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Impedit consequatur, nihil temporibus ab, animi velit ex sint porro, eveniet fugit maiores quia atque? Asperiores at ipsam iure, unde veritatis eveniet eum quis illum inventore facilis et sed numquam nisi eaque quasi exercitationem consequuntur nam vitae, cumque quae expedita? Voluptatum praesentium nostrum amet sequi ea nihil incidunt, aperiam natus quia maxime, sunt ipsa odit error eaque obcaecati dolorum fuga dolor vel voluptates dolore quas nemo iste. Accusamus quis hic perspiciatis necessitatibus odit qui ullam. Omnis, expedita, autem enim culpa ullam placeat laboriosam sed recusandae eos ab magni tempore inventore provident id ex accusamus iste maiores beatae illo quasi. Labore reiciendis quibusdam, rem. Tempore perferendis mollitia id repellendus consectetur voluptate dolore atque sunt, minus quos, eveniet. Aut sint officia explicabo cum sunt, fuga quibusdam, commodi dolorem laboriosam quo! Hic saepe cum, sequi temporibus maiores omnis consequatur eligendi minima deleniti nemo soluta amet ad voluptatem ab sed nostrum vero incidunt natus harum fugiat alias nobis? Autem reiciendis, quia amet nemo eligendi alias ab unde aperiam cumque. Possimus, veniam. Animi eius aliquid aspernatur possimus minus id perferendis iusto facilis consectetur, modi, vitae, aliquam placeat provident debitis sed reiciendis laborum a earum quas sit beatae quisquam voluptas, non! Reiciendis, rerum dolore illum. Commodi animi soluta omnis et expedita, magni ipsam nam praesentium non accusamus, aliquid cumque corrupti at voluptas similique maxime vero eaque excepturi in ullam? Amet, sequi accusamus eveniet inventore. Amet debitis sit praesentium ab libero fugit perferendis qui voluptas exercitationem nisi, autem ducimus magni itaque esse consectetur quia non assumenda doloremque quaerat placeat. Iure et perferendis quibusdam minima exercitationem nesciunt ad quam saepe dignissimos praesentium repudiandae consequatur vel ipsa, sit, ipsam asperiores numquam. A, nisi facere placeat eos dignissimos nobis, quod, unde modi nesciunt, porro dolores illo quaerat! Maiores labore totam est autem.
+      </div>
+    </div>
+
+
+
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

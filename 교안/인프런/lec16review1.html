@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>16깡깡</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li><a href="#">일상plan</a></li>
+      <li><a href="#">평일휴무plan</a></li>
+      <li><a href="#">주말휴무plan</a></li>
+    </ol>
+
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">월</a></li>
+        <li><a href="#">화</a></li>
+        <li><a href="#">수</a></li>
+        <li><a href="#">목</a></li>
+        <li><a href="#">금</a></li>
+        <li><a href="#">토</a></li>
+        <li><a href="#">일</a></li>
+        <li> 
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="pager">
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&#711;</span>Prev_Lvl</a></li>
+        <li class="next"><a href="#">Next_Lvl<span aria-hidden="true">&circ;</span></a></li>
+      </ul>
+    </nav>
+
+    <h3>낮잠직후
+      <span class="label label-primary">풀컨디션
+        <span class="badge">60</span>
+      </span>
+    </h3>
+    
+
+    <h3>평상시 
+      <span class="label label-info">살짝예민
+        <span class="badge">55</span>
+      </span>
+    </h3>
+
+    <h3>공부시  
+      <span class="label label-success">눈깜빡임의식
+        <span class="badge">60</span>
+      </span>
+    </h3>
+
+    <h3>독서시 
+      <span class="label label-warning">좀더예민
+        <span class="badge">65</span>
+      </span>
+    </h3>
+
+    <h3>수면부족
+      <span class="label label-danger">슈퍼예민
+        <span class="badge">80</span>
+      </span>
+    </h3>
+
+    <br>
+    <button class="btn btn-danger" type="button">
+      오늘자 낮잠시간<span class="badge">2.5</span>
+    </button>
+
+    <h2>Let's use jumbotron adn compared it with normal case.</h2>
+
+    <div class="jumbotron">
+      <h1>최은우</h1>
+      <p>최은우는 매일매일 치열하게 살면서 자신의 부족한 부분을 보완하고 성장하고 있다. 그래서 하루하루 그는 더 나은 사람이 되어있다. 그렇기에 주의하라. 얼마간 그를 못보면 엄청나게 다른 사람이 되어있을테니까..  </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">현재성장보기</a></p>
+    </div>
+
+    <div>
+      <h1>최은우</h1>
+      <p>최은우는 매일매일 치열하게 살면서 자신의 부족한 부분을 보완하고 성장하고 있다. 그래서 하루하루 그는 더 나은 사람이 되어있다. 그렇기에 주의하라. 얼마간 그를 못보면 엄청나게 다른 사람이 되어있을테니까..  </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">현재성장보기</a></p>
+    </div>
+
+     <div class="jumbotron">
+      <h1>최은우</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <p>최은우는 매일매일 치열하게 살면서 자신의 부족한 부분을 보완하고 성장하고 있다. 그래서 하루하루 그는 더 나은 사람이 되어있다. 그렇기에 주의하라. 얼마간 그를 못보면 엄청나게 다른 사람이 되어있을테니까..  </p>
+          </div>
+          <div class="col-xs-6">
+             <p><a class="btn btn-primary btn-lg" href="#" role="button">현재성장보기</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".pagination li").click(
+        function(){
+          var menu = $(".pagination li");
+          menu.removeClass("active");
+          $(this).addClass("active");
+        })
+    })
+  </script>
+  </body>
+</html>

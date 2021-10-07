@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>bootstrap template</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+
+    <h2>breadcrumb 클래스를 이용해서 상단에 네비게이션처럼 만들어보자.</h2>
+    <ol class="breadcrumb">
+      <li><a href="#">바탕화면</a></li>
+      <li><a href="#">솜노트</a></li>
+      <li><a href="#">솜노트폴더</a></li>
+    </ol>
+
+    <h2>pagination 클래스를 이용해서 간단한 페이지 표시를 만들어보자.</h2>
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>pager 클래스를 사용하여 페이지 이동하는 아이콘 만들기</h2>
+    <nav>
+      <ul class="pager">
+        <li class="previous"><a href="#"><span aira-hidden="true">&#17;이전단계</li>
+        <li class="next"><a href="#">다음단계<span aira-hidden="true">&rarr;</li>
+      </ul>
+    </nav>
+
+    <h2>label클래스를 이용하여 라벨색들 구현해보기</h2>
+    <h3>최은우<span class="label label-default">고정값</span><a href="#">Inbox <span class="badge">4</span></a></h3>
+    <span class="label label-primary">주요값</span>
+    <span class="label label-success">성공값</span>
+    <span class="label label-info">알림값</span>
+    <span class="label label-warning">경고값</span>
+    <span class="label label-danger">위험값</span>
+
+    <button class="btn btn-success" type="button">
+      남은군생활개월수 <span class="badge">13</span>
+    </button>
+
+    <h3>점보트론</h3>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>안녕~ 멋쟁이!!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, nemo? Nihil porro asperiores laboriosam maxime provident enim voluptate repellat natus id quo soluta, aut tempora blanditiis a cum repudiandae ipsum aliquam architecto deleniti esse, saepe quos voluptatibus eligendi ducimus. Odit incidunt esse aliquam perferendis hic necessitatibus obcaecati, rerum dolore voluptatibus!</p>
+        <p><a class="btn btn-info btn-lg" href="#" role="button">최은우님</a></p>
+      </div>
+    </div>
+
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".pagination li").click(
+          function(){
+            var menu = $(".pagination li");
+            menu.removeClass("active");
+            $(this).addClass("active");           
+          })
+      })
+    </script>
+
+
+
+  </body>
+</html>

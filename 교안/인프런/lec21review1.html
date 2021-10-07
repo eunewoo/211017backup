@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>bootstrap template</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      십자가의길
+    </a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      세상의길
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="well">
+        십자가의 길은 좁고 힘드나 세상 살아가는 동안 열심히 걸어가면 죽음이후 영생이 보장된다.
+        그러난 세상의 길은 넓고 쉬우나 세상 살아가는 동안만 편하고 죽음이후에는 영원한 지옥불로 간다.
+        나는 세상을 살면서는 적당히 세상의 길을 즐기다가 나이가 들어 십자가의 길을 가다 영생으로 가는 두마리 토끼를 동시에 잡고 싶다. 그러나 과연 이게 가능할까?
+      </div>
+    </div>
+
+    <h1>Let's show some accordian</h1>
+    <button class="btn_all">Show and Hide all contents</button>
+    <button class="btn_show">Show all contents</button>
+    <button class="btn_hide">Hide all contents</button>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ~대학교1학년뉴비최은우
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            순수하고 소심했음. 여자와 제대로 만나보지도 못하고 다 퍼주는 착한 남자, 바라보는 목표의 여자도 그냥 적당히 예쁘면 만족했음. 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae tempore aut harum voluptas sapiente similique voluptatum dignissimos rem ipsa, rerum minus nemo aliquid eum ex quibusdam, consequatur consequuntur hic, exercitationem.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2019년~2020년진화최은우
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            이제껏 쌓여온 착한남자로 인해 호구잡힘이 폭발함. 연애에 대해 많이 찾아보고 배움. 순수함과 소심함을 점차 버리기 시작함. 보통의 여자들에 만족하지 않고 더 예쁜 사람들과 만날거라는 목표를 세움.
+            그리고 뉴비시절에는 꿈도 못꿨을 170의 연기지망생과 1년넘게 연애를함. 이를통해 진정한 사랑에 대해서 배우고 잠시 착한남자가 됨.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              2021년흑화진행중최은우~
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            꿈이나 연애에 있어서 더 원대한 꿈을 꾸기 시작함. 또한 스스로가 평균의 남자들보다 훨씬 낫다는 사실을 몸소 깨닫고 있음. 연애공부에 더욱 매진해 연애박사가 되어가고 있고 과거의 순수한 소심함은 완전히 흑화가 되어버렸다. 
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Let's do some example coding</h1>
+    <h2>Blue_Bottle</h2>
+    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      BlueEvent
+    </button>
+   
+    
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function(){
+        $(".btn_all").click(function(){
+          $(".collapse").collapse("toggle");
+        })
+        $(".btn_show").click(function(){
+          $(".collapse").collapse("show");
+        })
+        $(".btn_hide").click(function(){
+          $(".collapse").collapse("hide");
+        })
+        $(".collapse").on("show.bs.collapse",
+          function(){
+            alert("최은우의 비밀을 감당할 수 있는가 자네?");
+          })
+      })
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>bootstrap template</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      #myModal_love {
+        position: relative;
+        top: 100px;
+      }
+    </style>
+    
+  </head>
+    <body>
+      <h2>Let's make a modal this time</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger btn-lg btn_love" data-toggle="modal" data-target="#myModal">
+        전연인과의 재결합
+      </button>
+
+      <button type="button" class="btn btn-danger btn-lg btn_future" data-toggle="modal" data-target="#myModal">
+        미래의 나
+      </button>
+
+      <h2>8월31일자 꿈에 대한 고민</h2>
+      <p>최은우는 8월31일자 낮잠을 자면서 이상한 꿈을 꾼다. 전여친이 꿈에 나와서 다시 만나자고 하는 것이다. 그러면서 최은우에게 왜 같은 장소에서 찍었던 프사를 내리냐고 말했다. 최은우는 거기서 고민에 빠졌다. 최은우가 재회하지 않는 가장 큰 원인인 연락의 귀찮음과 다른 이성에 대한 호감.. 여기서 다른 이성에 대한 호감은 고민에 영향을 거의 주지 않았다. 그래서 우선 상대방의 속마음을 더 끌어내고자 자신의 속마음들이 다 적힌 노트를 보고도 재회를 하고 싶냐고 질문을 날렸다고 한다.</p>
+      <!-- Modal -->
+      <div class="modal" id="myModal_love" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">전연인과의 재결합..과연 옳은 행동일까?</h4>
+            </div>
+            <div class="modal-body">
+              전연인과의 재결합은 하면 안된다. 사람의 고유한 특성은 잘 변하지 않기에 또 같은 문제로 다툴 것이고, 나아가 다툴 때마다 저번처럼 또 헤어지면 어떻하지 라는 불안감을 가지고 만나야한다.
+              또한, 이별기간 동안 상대방이 누구와 만났는지, 무얼 했는지 모르기에 그 찝찝한 감정을 가지고 만나야한다. 
+              당신은 이를 감당하기 힘들 것이다.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">만나지 않겠다..</button>
+              <a type="button" class="btn btn-primary" href="https://youtu.be/OzCaD88h8tk">그래도 만날거라면!!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="myModal_future" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">미래를 위해서 나는 현재 무슨 선택을 해야할까?</h4>
+            </div>
+            <div class="modal-body">
+              현재 군복무 중인 나에게는 매일매일 남들과 똑같은 24시간이 주어지고 있다. 이 시간동안 모든 것을 다 할 수는 없기에 나는 몇가지 일들만 선택해서 하며 하루하루를 살아간다. 귀찮고 힘들더라도 여기서 내가 선택하는 일이 공부, 자기계발등이라면 미래에 내가 다닐 회사가 달라질 것이다. 하루하루 열심히 살거나 막 산다고 해서 바로 결과가 나오지 않지만 사실 이는 조금씩 조금씩 누적되며 사람들 사이에서 차이를 불러일으키고 있다. 나중에 이 차이가 가시적으로 보였을 때 이 차이를 메꾸기에는 너무 늦을 수도 있다..
+            </div>
+            <div class="modal-footer">
+              <a type="button" class="btn btn-primary" href="https://youtu.be/u51cPD-LBrk">열심히살던사람</a>
+              <a type="button" class="btn btn-primary" href="https://youtu.be/wj4dAkn_MM4">게으름에순응한사람</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+
+    
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".btn_love").click(function() {
+        $("#myModal_love").modal({
+          backdrop: false,
+          keyboard: false
+        });
+      })
+      $(".btn_future").click(function() {
+        $("#myModal_love").modal("hide"),
+        $("#myModal_future").modal("show")
+      });
+      $('#myModal_future').on('hidden.bs.modal', function (e) {
+        alert("미래를 향해 열심히 달려나가는 당신, 오늘하루도 수고많으셨습니다.")
+      })
+    })
+  </script>
+  </body>
+</html>
